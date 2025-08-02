@@ -1,9 +1,10 @@
 import argparse
+import sys
 import time
 import winsound
-import sys
 
 def main():
+    # if the program was run via running metronome.py from explorer or bpm value is missing
     if len(sys.argv) == 1:
         value = int(input("Please enter BPM:"))
         delay_sec = 60 / value
