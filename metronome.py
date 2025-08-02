@@ -5,6 +5,7 @@ import winsound
 
 def main():
     # if value argument is missing
+    # this check prevents a user from receiving zero output running the file via explorer -> open with>Python etc. which will pass no value argument
     if len(sys.argv) == 1:
         value = int(input("Please enter BPM:"))
         delay_sec = 60 / value
