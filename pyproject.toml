@@ -15,3 +15,6 @@ metronome = "metronome.app:main"
 
 [tool.setuptools.package-data]
 "metronome" = ["sounds/*.wav"]
+
+[tool.setuptools.packages.find]
+include = ["metronome*"]
