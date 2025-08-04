@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metronome"
+version = "0.1.0"
+description = "Simple command-line metronome"
+requires-python = ">=3.8"
+authors = [ { name = "Your Name" } ]
+dependencies = []
+
+[project.scripts]
+metronome = "metronome.app:main"
+
+[tool.setuptools.package-data]
+"metronome" = ["sounds/*.wav"]
