@@ -29,7 +29,7 @@ def main():
 
     try:
         while True:
-            winsound.PlaySound(f"{__file__}\\..\\sounds\\stick.wav", winsound.SND_FILENAME | winsound.SND_ASYNC)
+            winsound.PlaySound(f"{__file__}/sounds/stick.wav", winsound.SND_FILENAME | winsound.SND_ASYNC)
             time.sleep(delay_sec)
     except KeyboardInterrupt:
         print("\nStopped.")
